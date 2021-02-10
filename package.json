@@ -1,6 +1,6 @@
 {
-  "name": "broccoli-css-modules",
-  "version": "0.7.0",
+  "name": "@summit-electric-supply/broccoli-css-modules",
+  "version": "0.0.0",
   "description": "A broccoli plugin for compiling CSS modules",
   "main": "index.js",
   "scripts": {
@@ -54,5 +54,27 @@
   "volta": {
     "node": "14.15.5",
     "yarn": "1.22.10"
+  },
+  "release-it": {
+    "git": {
+      "changelog": "npx auto-changelog --stdout --template https://gist.githubusercontent.com/atsjj/de6998d6750a8b32778fa3380da24301/raw/66a23990c3324f03aa756e45fed70d46389c7eab/compact.hbs",
+      "requireCleanWorkingDir": true,
+      "requireUpstream": true,
+      "requireCommits": false,
+      "addUntrackedFiles": false,
+      "commit": true,
+      "commitMessage": "${version}",
+      "commitArgs": "--gpg-sign",
+      "tag": true,
+      "tagName": "${version}",
+      "tagAnnotation": "${version}",
+      "tagArgs": "--sign",
+      "push": true,
+      "pushArgs": "--follow-tags",
+      "pushRepo": "origin"
+    },
+    "npm": {
+      "publish": true
+    }
   }
 }
