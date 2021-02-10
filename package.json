@@ -44,12 +44,12 @@
     "eslint": "^7.19.0",
     "fs-extra": "^9.1.0",
     "mocha": "^8.2.1",
-    "postcss": "^8.2.5",
+    "postcss": "^8.2.6",
     "postcss-scss": "^3.0.4",
     "sinon": "^9.2.4"
   },
   "peerDependencies": {
-    "postcss": "^8.1.0"
+    "postcss": "^8.0.0"
   },
   "volta": {
     "node": "14.15.5",
